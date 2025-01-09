@@ -10,6 +10,7 @@ function Sidebar() {
     { path: '/dashboard', icon: '📊', label: 'Dashboard' },
     { path: '/licenses', icon: '🔑', label: 'Licenças' },
     { path: '/customers', icon: '👥', label: 'Clientes' },
+    { path: '/whatsapp', icon: '💬', label: 'Conexões Zap' },
     { path: '/settings', icon: '⚙️', label: 'Configurações' }
   ];
 
@@ -21,7 +22,6 @@ function Sidebar() {
     <aside className={`sidebar ${isExpanded ? 'expanded' : 'collapsed'}`}>
       <div className="sidebar-header">
         <h2>{isExpanded ? 'SaaS Manager' : 'SM'}</h2>
-        {isExpanded && <p className="company-name">Sua Empresa</p>}
         <button className="toggle-button" onClick={toggleSidebar}>
           {isExpanded ? '◀' : '▶'}
         </button>

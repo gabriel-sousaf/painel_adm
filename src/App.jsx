@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard'
 import LicenseManagement from './components/LicenseManagement'
 import CustomerManagement from './components/CustomerManagement'
 import SettingsLayout from './components/Settings/SettingsLayout'
+import WhatsappConnections from './components/WhatsappConnections/WhatsappConnections'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/licenses" element={<LicenseManagement />} />
           <Route path="/customers" element={<CustomerManagement />} />
+          <Route path="/whatsapp" element={<WhatsappConnections />} />
           <Route path="/settings" element={<SettingsLayout />} />
         </Routes>
       </MainLayout>
