@@ -1,0 +1,161 @@
+.sidebar {
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar.expanded {
+  width: 280px;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.toggle-button {
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.toggle-button:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-name {
+  margin: 0.5rem 0 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.sidebar-nav {
+  padding: 1rem;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  color: #4b5563;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  background: #f3f4f6;
+}
+
+.nav-item.active {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.nav-icon {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.collapsed .nav-icon {
+  margin-right: 0;
+}
+
+.nav-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sidebar-footer {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.collapsed .user-avatar {
+  margin-right: 0;
+}
+
+.user-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #6b7280;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: #ef4444;
+}
